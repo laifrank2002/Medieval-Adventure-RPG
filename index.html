@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="javascript/image_loader.js"></script>
+	<script>
+		// these need to be loaded good and beforehand.
+		var image_library = {
+			"tile_none": create_image("assets/tiles/none.png"),
+			"tile_wall": create_image("assets/tiles/wall.png"),
+			"tile_floor": create_image("assets/tiles/floor.png"),
+			"player_test": create_image("assets/sprites/player_test.png"),
+			"generic_important": create_image("assets/sprites/generic_important.png"),
+			"jail_door": create_image("assets/sprites/jail_door.png"),
+		};
+		
+		var audio_library = {
+			
+		};
+	</script>
+	<script src="javascript/engine.js"></script>
+	<script src="javascript/canvas_handler.js"></script>
+	<script src="javascript/mouse_handler.js"></script>
+	<script src="javascript/key_handler.js"></script>
+	
+	<script src="javascript/game.js"></script>
+	<script src="javascript/player.js"></script>
+	<script src="javascript/map.js"></script>
+	<script src="javascript/map_object.js"></script>
+	<script src="javascript/map_handler.js"></script>
+	<script src="javascript/tiles.js"></script>
+	<script src="javascript/special_tile.js"></script>
+	<script src="javascript/scene_handler.js"></script>
+	
+	<script src="data/maps/prison_map.js"></script>
+	
+	<script src="data/scenes/scene_template.js"></script>
+	<script src="data/scenes/jail_break.js"></script>
+	
+	<script src="JS_pages/JS_page.js"></script>
+	<script src="JS_pages/JS_button.js"></script>
+	<script src="JS_pages/JS_label.js"></script>
+	<script src="JS_pages/JS_image.js"></script>
+	<script src="JS_pages/page_manager.js"></script>
+	
+	<script>
+		
+		
+		// when the window is loaded, then the engine can be safely initialized
+		window.onload = function()
+		{
+			Engine.initialize();
+		}
+		
+	</script>
+</head>
+</body>
+	<div id="canvas_container">
+		<canvas height="500px" width="800px" id="main_canvas">Your browser does not support the canvas element.</canvas>
+	</div>
+	<h1>Medieval Adventure RPG</h1>
+	<h2>By Frank Lai</h2>
+	<h2>Original Script thanks to Aurora</h2>
+</body>
+</html>
